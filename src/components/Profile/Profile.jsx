@@ -1,5 +1,6 @@
-export default function Profile({ username, tag, location, avatar, stats }){
-    <div class="profile">
+export default function Profile({ username, tag, location, avatar, stats }) {
+    
+    return <div class="profile">
         <div class="description">
             <img
             src={avatar}
