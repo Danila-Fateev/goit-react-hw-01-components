@@ -1,29 +1,32 @@
+import styles from "./Profile.module.css"
+
 export default function Profile({ username, tag, location, avatar, stats }) {
     
-    return <div class="profile">
-        <div class="description">
+    return <div className={styles.profile} class="profile">
+        <div className={styles.description} class="description">
             <img
             src={avatar}
-            alt="User avatar"
+                alt="User avatar"
+                className={styles.avatar}
             class="avatar"
             />
-            <p class="name">{username}</p>
-            <p class="tag">@{tag}</p>
-            <p class="location">{location}</p>
+            <p className={styles.name} class="name">{username}</p>
+            <p className={styles.tag} class="tag">@{tag}</p>
+            <p className={styles.location} class="location">{location}</p>
         </div>
 
-        <ul class="stats">
+        <ul className={styles.stats} class="stats">
             <li>
-                <span class="label">Followers</span>
-                <span class="quantity">{stats.followers}</span>
+                <p className={styles.label} class="label">Followers</p>
+                <p className={styles.quantity} class="quantity">{stats.followers}</p>
             </li>
             <li>
-                <span class="label">Views</span>
-                <span class="quantity">{stats.views}</span>
+                <p className={styles.label} class="label">Views</p>
+                <p className={styles.quantity} class="quantity">{stats.views}</p>
             </li>
             <li>
-                <span class="label">Likes</span>
-                <span class="quantity">{stats.likes}</span>
+                <p className={styles.label} class="label">Likes</p>
+                <p className={styles.quantity} class="quantity">{stats.likes}</p>
             </li>
         </ul>
 </div>
