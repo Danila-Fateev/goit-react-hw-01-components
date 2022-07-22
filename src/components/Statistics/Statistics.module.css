@@ -3,6 +3,7 @@
     border: 1px solid #000;
     width: 600px;
     margin-top: 20px;
+    border-radius: 5px;
 }
 
 .title {
@@ -19,5 +20,16 @@ text-align: center;
 
 .item {
     border: 1px solid rgba(128, 128, 128, 0.582);
-    width: 100%
+    width: 100%;
+    padding: 10px;
+}
+
+.label {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.percentage {
+    font-size: 25px;
+    margin: 0;
 }
