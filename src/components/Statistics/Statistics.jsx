@@ -1,17 +1,19 @@
+import styles from "./Statistics.module.css"
+
 function generateRandomColorHex() {
   return "#" + ("00000" + Math.floor(Math.random() * Math.pow(16, 6)).toString(16)).slice(-6);
 }
 
-export default function Statistics({id, label, percentage}) {
+export default function Statistics({props}) {
     return (
-        <section class="statistics">
-  <h2 class="title">Upload stats</h2>
+        <section className={styles.statistics}>
+  <h2 className={styles.title} >Upload stats</h2>
 
-  <ul class="stat-list">
-    <li class="item">
-      <span class="label">.docx</span>
-      <span class="percentage">4%</span>
-    </li>
+  <ul className={styles.stat_list}>
+{props.map(el => <li className={styles.item}  id={el.id}>
+    <p className={styles.label} >{el.label}</p>
+    <p className={styles.percentage} >{el.percentage}%</p>
+    </li>)}
   </ul>
 </section>
     )
