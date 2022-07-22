@@ -1,6 +1,8 @@
-export default function TransactionHistory({props}) {
+import styles from "./TransactionHistory.module.css"
+
+export default function TransactionHistory({ props }) {
     return (
-        <table class="transaction-history">
+        <table className={styles.table}>
             <thead>
                 <tr>
                 <th>Type</th>

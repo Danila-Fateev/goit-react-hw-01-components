@@ -1,0 +1,22 @@
+.table {
+    margin: auto;
+    width: 600px;
+    margin-bottom: 20px;
+    border: 1px solid #b6b6b6;
+    border-collapse: collapse;
+}
+
+.table th {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    background: #0abaff;
+    border: 1px solid #b6b6b6;
+}
+
+.table td {
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #b6b6b6;
+    padding: 5px;
+}
