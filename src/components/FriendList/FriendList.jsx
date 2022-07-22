@@ -1,10 +1,12 @@
-export default function FriendList({props}) {
+import styles from "./FriendList.module.css"
+
+export default function FriendList({ props }) {
     return (
-        <ul class="friend_list">
-            {props.map(el => <li class="item" id={el.id}>
-                <span class="status"></span>
-                <img class="avatar" src={el.avatar} alt={el.name} width="48" />
-                <p class="name">{el.name}</p>
+        <ul className={styles.friend_list}>
+            {props.map(el => <li className={styles.item} id={el.id}>
+                <span className={el.isOnline ? styles.online : styles.offline}></span>
+                <img className={styles.avatar} src={el.avatar} alt={el.name} width="48" />
+                <p className={styles.name}>{el.name}</p>
             </li>)}
     </ul>
 )
