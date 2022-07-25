@@ -1,4 +1,5 @@
 import styles from './Statistics.module.css';
+import PropTypes from 'prop-types';
 
 function generateRandomColorHex() {
   return (
@@ -29,3 +30,9 @@ export default function Statistics({ props }) {
     </section>
   );
 }
+
+Statistics.propTypes = {
+  id: PropTypes.string,
+  label: PropTypes.string,
+  percentage: PropTypes.number,
+};
