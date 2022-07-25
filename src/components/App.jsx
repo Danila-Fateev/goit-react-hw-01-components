@@ -1,14 +1,14 @@
-import Profile from "./Profile/Profile"
-import user from "./Profile/user.json"
+import Profile from './Profile/Profile';
+import user from './Profile/user.json';
 
-import Statistics from "./Statistics/Statistics"
-import data from "./Statistics/data.json"
+import Statistics from './Statistics/Statistics';
+import data from './Statistics/data.json';
 
-import FriendList from "./FriendList/FriendList"
-import friends from "./FriendList/friends.json"
+import FriendList from './FriendList/FriendList';
+import friends from './FriendList/friends.json';
 
-import TransactionHistory from "./TransactionHistory/TransactionHistory"
-import transactons from "./TransactionHistory/transactions.json"
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+import transactons from './TransactionHistory/transactions.json';
 
 export const App = () => {
   return (
@@ -19,7 +19,7 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
       <Profile
@@ -28,17 +28,13 @@ export const App = () => {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
-        />
-      
-      <Statistics
-        props={data}
       />
-      <FriendList
-        props={friends}
-      />
-      <TransactionHistory 
-        props={transactons}
-      />
+
+      <Statistics props={data} />
+
+      <FriendList props={friends} />
+
+      <TransactionHistory props={transactons} />
     </div>
   );
 };

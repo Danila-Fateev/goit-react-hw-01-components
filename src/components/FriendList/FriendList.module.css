@@ -3,48 +3,48 @@
     padding: 0;
 } */
 .friend_list {
-    padding: 0;
-    margin: auto;
-    list-style: none;
-    width: 600px;
-    margin-top: 25px;
+  padding: 0;
+  margin: auto;
+  list-style: none;
+  width: 600px;
+  margin-top: 25px;
 }
 
 .item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 15px;
-    padding: 25px;
-    -webkit-box-shadow: 5px 5px 15px 5px #000000;
-        box-shadow: 5px 5px 15px 5px #00000081;
-        border-radius: 5px;
-        border: 1px solid rgba(128, 128, 128, 0.527);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 25px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #00000081;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.527);
 }
 
 .status {
-    content: " ";
-    display: block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin-right: 10px;
+  content: ' ';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .avatar {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .name {
-    margin: 0;
+  margin: 0;
 }
 
 .online {
-    composes: status;
-    background-color: rgb(83, 245, 83);
+  composes: status;
+  background-color: rgb(83, 245, 83);
 }
 
 .offline {
-    composes: status;
-    background-color: rgb(209, 0, 0);
+  composes: status;
+  background-color: rgb(209, 0, 0);
 }
