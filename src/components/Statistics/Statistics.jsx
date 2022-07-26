@@ -13,8 +13,6 @@ function generateRandomColorHex() {
 export default function Statistics({ props }) {
   return (
     <section className={styles.statistics}>
-      <h2 className={styles.title}>Upload stats</h2>
-
       <ul className={styles.stat_list}>
         {props.map(el => (
           <li
