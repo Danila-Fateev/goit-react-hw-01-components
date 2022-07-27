@@ -19,6 +19,7 @@ export default function Statistics({ title, props }) {
           <li
             className={styles.item}
             style={{ background: generateRandomColorHex() }}
+            key={el.id}
             id={el.id}
           >
             <p className={styles.label}>{el.label}</p>
@@ -35,7 +36,7 @@ Statistics.propTypes = {
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
-      percentage: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
     })
   ),
 };
