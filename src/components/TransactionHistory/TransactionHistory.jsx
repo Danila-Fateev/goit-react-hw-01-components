@@ -13,7 +13,7 @@ export default function TransactionHistory({ props }) {
       </thead>
       <tbody>
         {props.map(el => (
-          <tr id={el.id}>
+          <tr id={el.id} key={el.id}>
             <td>{el.type}</td>
             <td>{el.amount}</td>
             <td>{el.currency}</td>
