@@ -13,7 +13,7 @@ function generateRandomColorHex() {
 export default function Statistics({ title, props }) {
   return (
     <section className={styles.statistics}>
-      {title && <h2>{title}</h2>}
+      {title && <h2 className={styles.title}>{title}</h2>}
       <ul className={styles.stat_list}>
         {props.map(el => (
           <li

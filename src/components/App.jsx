@@ -30,7 +30,7 @@ export const App = () => {
         stats={user.stats}
       />
 
-      <Statistics props={data} />
+      <Statistics title="" props={data} />
 
       <FriendList props={friends} />
 
