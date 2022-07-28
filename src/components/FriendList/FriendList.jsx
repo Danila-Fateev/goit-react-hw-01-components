@@ -5,7 +5,7 @@ export default function FriendList({ props }) {
   return (
     <ul className={styles.friend_list}>
       {props.map(prop => (
-        <FriendListItem prop={prop} />
+        <FriendListItem key={prop.id} prop={prop} />
       ))}
     </ul>
   );
